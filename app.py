@@ -21,4 +21,5 @@ def index():
 if __name__ == '__main__':
     import os
     print("Database path:", os.path.abspath('instance/pets.db'))
+    print("Database URI:", app.config['SQLALCHEMY_DATABASE_URI'])
     app.run(debug=True)
