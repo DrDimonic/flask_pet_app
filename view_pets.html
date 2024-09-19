@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <h1>Pet List</h1>
@@ -23,5 +24,6 @@
             <li>{{ pet.name }} - {{ pet.age }} - {{ pet.type }}</li>
         {% endfor %}
     </ul>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
