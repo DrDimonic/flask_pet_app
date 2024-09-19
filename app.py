@@ -19,4 +19,6 @@ def index():
     return render_template('view_pets.html', form=form, pets=pets)
 
 if __name__ == '__main__':
+    import os
+    print("Database path:", os.path.abspath('instance/pets.db'))
     app.run(debug=True)
