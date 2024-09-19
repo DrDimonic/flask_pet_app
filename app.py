@@ -8,9 +8,7 @@ app.config['SECRET_KEY'] = 'your_secret_key'
 db.init_app(app)
 
 @app.route('/', methods=['GET', 'POST'])
-
 def index():
-
     form = PetForm()
     if form.validate_on_submit():
         pet = Pet(name=form.name.data, age=form.age.data, type=form.type.data)
